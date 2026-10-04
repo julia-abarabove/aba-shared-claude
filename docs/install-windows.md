@@ -48,10 +48,10 @@ copy the token. Then paste this line into PowerShell, **replacing
 `PASTE_TOKEN_HERE` with your token** before pressing Enter:
 
 ```powershell
-claude mcp add asana --scope user -e ASANA_ACCESS_TOKEN=PASTE_TOKEN_HERE -- cmd /c npx -y @roychri/mcp-server-asana
+cd $HOME\Documents\aba-shared-claude; claude mcp add asana --scope local -e ASANA_ACCESS_TOKEN=PASTE_TOKEN_HERE -- cmd /c npx -y @roychri/mcp-server-asana
 ```
 
-Success: "Added stdio MCP server asana".
+Success: "Added stdio MCP server asana". Asana only connects when you start Claude from the team kit folder, which is where the safety rules live.
 
 Never paste the token into the Claude chat itself. It only goes in this one
 command.
@@ -73,7 +73,7 @@ Type this to Claude and press Enter:
 
 > What Asana tasks are assigned to me?
 
-Success: Claude lists tasks assigned to "Claude, (on behalf of <your name>)"
+Success: Claude lists tasks assigned to "Claude (on behalf of <your name>)"
 (it may be an empty list, that's fine). If it asks permission to use an Asana
 tool, say yes.
 

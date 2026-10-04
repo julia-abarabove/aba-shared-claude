@@ -6,7 +6,7 @@ description: Use whenever working on an Asana task for an ABA teammate, includin
 # Working an Asana task safely
 
 You are connected to Asana as the teammate's helper account, named
-"Claude, (on behalf of <Name>)". Everything you write shows up under that name.
+"Claude (on behalf of <Name>)". Everything you write shows up under that name.
 
 ## Step 1: Find the work
 
