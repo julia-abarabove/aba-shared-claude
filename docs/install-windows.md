@@ -6,7 +6,6 @@ press Enter.
 
 Before you start, have these ready:
 - Your Claude Team invite accepted (check your abarabove.com email).
-- A GitHub account that Julia has added to the team kit.
 - Access to your 1Password item **"Asana PAT -- Claude on behalf of <your name>"**.
 
 ---
@@ -16,7 +15,7 @@ Before you start, have these ready:
 Paste this into PowerShell and press Enter. Say **Yes** to any pop-ups.
 
 ```powershell
-winget install --id Git.Git -e; winget install --id OpenJS.NodeJS.LTS -e; winget install --id GitHub.cli -e
+winget install --id Git.Git -e; winget install --id OpenJS.NodeJS.LTS -e
 ```
 
 Success: each line ends with "Successfully installed" (or "already
@@ -34,27 +33,15 @@ irm https://claude.ai/install.ps1 | iex
 Success: it says Claude Code was installed. Close PowerShell and open a new
 one again.
 
-## 3. Sign in to GitHub
+## 3. Download the team kit
 
 ```powershell
-gh auth login
-```
-
-Pick these answers with the arrow keys and Enter: **GitHub.com**, **HTTPS**,
-**Yes** (authenticate Git), **Login with a web browser**. Copy the 8-character
-code it shows, press Enter, paste the code in the browser, approve.
-
-Success: "Logged in as <your GitHub name>".
-
-## 4. Download the team kit
-
-```powershell
-cd $HOME\Documents; gh repo clone julia-abarabove/aba-shared-claude
+cd $HOME\Documents; git clone https://github.com/julia-abarabove/aba-shared-claude.git
 ```
 
 Success: a new folder `Documents\aba-shared-claude`.
 
-## 5. Connect Asana
+## 4. Connect Asana
 
 Open 1Password, find **"Asana PAT -- Claude on behalf of <your name>"**, and
 copy the token. Then paste this line into PowerShell, **replacing
@@ -69,7 +56,7 @@ Success: "Added stdio MCP server asana".
 Never paste the token into the Claude chat itself. It only goes in this one
 command.
 
-## 6. Start Claude Code
+## 5. Start Claude Code
 
 ```powershell
 cd $HOME\Documents\aba-shared-claude; claude
@@ -80,7 +67,7 @@ The first time:
   **@abarabove.com** email (your Team seat).
 - When it asks whether you trust this folder, say **Yes**.
 
-## 7. Check it works
+## 6. Check it works
 
 Type this to Claude and press Enter:
 

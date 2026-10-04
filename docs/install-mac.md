@@ -5,7 +5,6 @@ typing commands). To open it: press Cmd + Space, type `Terminal`, press Enter.
 
 Before you start, have these ready:
 - Your Claude Team invite accepted (check your abarabove.com email).
-- A GitHub account that Julia has added to the team kit.
 - Access to your 1Password item **"Asana PAT -- Claude on behalf of <your name>"**.
 
 ---
@@ -25,9 +24,6 @@ If it shows a version number, you're set. If a pop-up offers to install
 **b. Node.js.** Go to https://nodejs.org, download the **LTS** version for
 Mac, open the downloaded file, and click through the installer.
 
-**c. GitHub CLI.** Go to https://cli.github.com, click **Download for Mac**,
-open the downloaded file, and click through the installer.
-
 **Then quit Terminal (Cmd + Q) and open it again.**
 
 ## 2. Install Claude Code
@@ -38,27 +34,15 @@ curl -fsSL https://claude.ai/install.sh | bash
 
 Success: it says Claude Code was installed. Quit and reopen Terminal.
 
-## 3. Sign in to GitHub
+## 3. Download the team kit
 
 ```bash
-gh auth login
-```
-
-Pick these answers with the arrow keys and Enter: **GitHub.com**, **HTTPS**,
-**Yes** (authenticate Git), **Login with a web browser**. Copy the 8-character
-code it shows, press Enter, paste the code in the browser, approve.
-
-Success: "Logged in as <your GitHub name>".
-
-## 4. Download the team kit
-
-```bash
-cd ~/Documents && gh repo clone julia-abarabove/aba-shared-claude
+cd ~/Documents && git clone https://github.com/julia-abarabove/aba-shared-claude.git
 ```
 
 Success: a new folder `Documents/aba-shared-claude`.
 
-## 5. Connect Asana
+## 4. Connect Asana
 
 Open 1Password, find **"Asana PAT -- Claude on behalf of <your name>"**, and
 copy the token. Then paste this line into Terminal, **replacing
@@ -73,7 +57,7 @@ Success: "Added stdio MCP server asana".
 Never paste the token into the Claude chat itself. It only goes in this one
 command.
 
-## 6. Start Claude Code
+## 5. Start Claude Code
 
 ```bash
 cd ~/Documents/aba-shared-claude && claude
@@ -84,7 +68,7 @@ The first time:
   **@abarabove.com** email (your Team seat).
 - When it asks whether you trust this folder, say **Yes**.
 
-## 7. Check it works
+## 6. Check it works
 
 Type this to Claude and press Enter:
 
