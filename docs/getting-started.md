@@ -43,6 +43,10 @@ assignee, due date, or location, and it can't delete anything.
 Treat Claude's work like a draft from a smart new hire: usually good, always
 worth a read.
 
+When Claude asks "Do you want to proceed?" before changing an Asana task,
+**pick 1 (Yes) or 3 (No). Never pick 2 ("don't ask again")** for Asana. Option
+2 switches off the safety check for good on your computer.
+
 ## Good things to ask
 
 - "Summarize what's happening on this task and what's blocking it."
