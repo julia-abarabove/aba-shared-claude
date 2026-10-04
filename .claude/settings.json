@@ -1,0 +1,51 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__asana__asana_list_workspaces",
+      "mcp__asana__asana_search_projects",
+      "mcp__asana__asana_search_tasks",
+      "mcp__asana__asana_get_task",
+      "mcp__asana__asana_get_task_stories",
+      "mcp__asana__asana_get_project",
+      "mcp__asana__asana_get_project_task_counts",
+      "mcp__asana__asana_get_project_sections",
+      "mcp__asana__asana_get_multiple_tasks_by_gid",
+      "mcp__asana__asana_get_project_status",
+      "mcp__asana__asana_get_project_statuses",
+      "mcp__asana__asana_get_tag",
+      "mcp__asana__asana_get_tags_for_task",
+      "mcp__asana__asana_get_tasks_for_tag",
+      "mcp__asana__asana_get_tags_for_workspace",
+      "mcp__asana__asana_get_subtasks",
+      "mcp__asana__asana_get_tasks_for_project",
+      "mcp__asana__asana_get_my_tasks",
+      "mcp__asana__asana_create_task_story",
+      "mcp__asana__asana_create_subtask"
+    ],
+    "ask": [
+      "mcp__asana__asana_update_task",
+      "mcp__asana__asana_create_task",
+      "mcp__asana__asana_add_project_to_task",
+      "mcp__asana__asana_add_task_to_section",
+      "mcp__asana__asana_set_parent_for_task",
+      "mcp__asana__asana_add_task_dependencies",
+      "mcp__asana__asana_add_task_dependents",
+      "mcp__asana__asana_add_tag_to_task",
+      "mcp__asana__asana_remove_tag_from_task",
+      "mcp__asana__asana_create_project_status"
+    ],
+    "deny": [
+      "mcp__asana__asana_delete_task",
+      "mcp__asana__asana_delete_section",
+      "mcp__asana__asana_delete_tag",
+      "mcp__asana__asana_delete_project_status",
+      "mcp__asana__asana_remove_project_from_task",
+      "mcp__asana__asana_create_project",
+      "mcp__asana__asana_update_project",
+      "mcp__asana__asana_create_section",
+      "mcp__asana__asana_update_section",
+      "mcp__asana__asana_create_tag_for_workspace",
+      "mcp__asana__asana_update_tag"
+    ]
+  }
+}

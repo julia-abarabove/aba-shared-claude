@@ -1,0 +1,25 @@
+{
+  "_readme": "Reference only. Do not put a real token in this file and do not commit one. The install guides (docs/install-windows.md, docs/install-mac.md) add this server with one command that keeps the token on your own computer. Server: @roychri/mcp-server-asana (npm). Token = the Asana personal access token for YOUR helper account 'Claude, (on behalf of <Name>)', from 1Password item 'Asana PAT -- Claude on behalf of <Name>'.",
+  "mac": {
+    "mcpServers": {
+      "asana": {
+        "command": "npx",
+        "args": ["-y", "@roychri/mcp-server-asana"],
+        "env": {
+          "ASANA_ACCESS_TOKEN": "PASTE_YOUR_HELPER_ACCOUNT_TOKEN_HERE"
+        }
+      }
+    }
+  },
+  "windows": {
+    "mcpServers": {
+      "asana": {
+        "command": "cmd",
+        "args": ["/c", "npx", "-y", "@roychri/mcp-server-asana"],
+        "env": {
+          "ASANA_ACCESS_TOKEN": "PASTE_YOUR_HELPER_ACCOUNT_TOKEN_HERE"
+        }
+      }
+    }
+  }
+}
